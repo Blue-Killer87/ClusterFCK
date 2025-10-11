@@ -25,3 +25,6 @@ ClusterFCK is purely a fun project and it's not meant to be on a proffesional le
 <br>
 <br>
 **In case of any cool ideas, recommendations or comments, feel free to contact me via anything you like or drop an issue/merge here on github.**
+
+
+***Make files will be included soon***
