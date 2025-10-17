@@ -45,7 +45,6 @@ int main() {
             continue;
         }
 
-
         memset(buffer, 0, BUFFER_SIZE);
         read(new_socket, buffer, BUFFER_SIZE);
         std::cout << "[Slave] Received command: " << buffer << std::endl;
