@@ -9,7 +9,8 @@
 
 using namespace std;
 
-string run_command(const string& cmd) {
+string 
+run_command(const string& cmd) {
     FILE* pipe = popen(cmd.c_str(), "r");
     if (!pipe) return "[error]";
     char buffer[1024];
@@ -19,7 +20,8 @@ string run_command(const string& cmd) {
     return result.str();
 }
 
-int main() {
+int 
+main() {
     // Hostname & uptime
     cout << "[Hostname & Uptime]\n";
     cout << run_command("hostname");

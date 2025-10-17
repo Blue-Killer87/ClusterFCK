@@ -22,7 +22,8 @@
 
 using namespace std;
 
-string trim(const string& str) {
+string 
+trim(const string& str) {
     size_t first = str.find_first_not_of(" \t\n");
     if (first == string::npos) return "";
     size_t last = str.find_last_not_of(" \t\n");
@@ -47,7 +48,8 @@ map<string, string> loadNodeList() {
     return nodes;
 }
 
-string run_command(const string& cmd) {
+string 
+run_command(const string& cmd) {
     FILE* pipe = popen(cmd.c_str(), "r");
     if (!pipe) return "[error]";
     char buffer[1024];
@@ -57,7 +59,8 @@ string run_command(const string& cmd) {
     return result.str();
 }
 
-string getLocalSysinfo() {
+string 
+getLocalSysinfo() {
     stringstream ss;
     ss << "🖥️  === Master Node ===\n";
 
@@ -93,7 +96,8 @@ string getLocalSysinfo() {
     return ss.str();
 }
 
-string queryNode(const string& ip) {
+string 
+queryNode(const string& ip) {
     int sockfd;
     struct sockaddr_in serv_addr;
     struct hostent *server;
@@ -128,7 +132,8 @@ string queryNode(const string& ip) {
     return response.str();
 }
 
-int main() {
+int 
+main() {
     cout << "[i] Cluster Monitor\n";
     cout << "==============================\n";
 

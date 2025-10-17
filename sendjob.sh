@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG="nodes.conf"      # path to config file (contains names and IPs of nodes [can be automated by autodiscovery script])
+CONFIG="autodiscover/nodes.conf"      # path to config file (contains names and IPs of nodes [can be automated by autodiscovery script])
 EXECUTABLE="./mainnode"  # path to compiled C++ client
 
 if [ "$#" -lt 2 ]; then

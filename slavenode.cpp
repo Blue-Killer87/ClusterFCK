@@ -11,7 +11,8 @@
 #define PORT 1933
 #define BUFFER_SIZE 1024
 
-int main() {
+int 
+main() {
     int server_fd, new_socket;
     struct sockaddr_in address;
     int opt = 1;
